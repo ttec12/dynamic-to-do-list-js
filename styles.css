@@ -18,9 +18,17 @@ body {
 }
 
 @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #todo-app {
@@ -152,8 +160,15 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .task-item:hover {
@@ -271,21 +286,29 @@ body {
     color: #95a5a6;
 }
 
+.storage-status {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
 @media (max-width: 600px) {
     .input-container {
         flex-direction: column;
     }
-    
+
     #add-task-btn {
         justify-content: center;
         padding: 15px;
     }
-    
+
     .task-item {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .task-actions {
         width: 100%;
         justify-content: flex-end;
